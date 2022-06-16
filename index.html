@@ -6,36 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id="container">
         <div id="nav">
-            <div id="title">
-
+            <div style="display:flex;height: 100px;">
+                <img src="castle.png" style="width:50px;height:50px;margin-top: 5px;margin-left: 15px;" alt="">
+                <h1 class="title" >Dashboard</h1>
             </div>
             <div id="user-options">
-
+                <div class="option">
+                    <img src="home-city-outline.png" alt="">
+                    <h3>Home</h3>
+                </div>
+                <div class="option">
+                    <img src="passport.png" alt="">
+                    <h3>Profile</h3>
+                </div>
+                <div class="option">
+                    <img src="message-settings-outline.png" alt="">
+                    <h3>Messages</h3>
+                </div>
+                <div class="option">
+                    <img src="history.png" alt="">
+                    <h3>History</h3>
+                </div>
+                <div class="option">
+                    <img src="note-outline.png" alt="">
+                    <h3>Tasks</h3>
+                </div>
+                <div class="option">
+                    <img src="account-group-outline.png" alt="">
+                    <h3>Communities</h3>
+                </div>
             </div>
             <div id="user-settings">
-
+                <div class="option">
+                    <img src="cog.png" alt="">
+                    <h3>Settings</h3>
+                </div>
+                <div class="option">
+                    <img src="comment-question-outline.png" alt="">
+                    <h3>Support</h3>
+                </div>
+                <div class="option">
+                    <img src="shield-key-outline.png" alt="">
+                    <h3>Privacy</h3>
+                </div>
             </div>
         </div>
         <div id="main">
             <div id="main-header">
-                <input type="text" name="search" id="search">
+                <div id="title-search">
+                    <form action="get" id="my-form">
+                        <input type="text" name="search" id="search">
+                        <button type="submit" form="my-form" id="submit-button">
+                            <img src="search-web.png" alt="" style="cursor:pointer;">
+                        </button>
+                    </form>
+                    <div style="display:flex;">
+                        <div style="width:60px;height:60px;border-radius:100px;background-color:#EF4444;margin-top: 10px;margin-left: 10px;">
+                            <img src="alien.png" alt="" style="width:60px; height:60px;">
+                        </div>
+                        <div style="display:flex;flex-direction: column;">
+                            <p style="margin-bottom: -20px;margin-left:10px;">Hi There, </p>
+                            <h1 class="title">Morgan Oakley</h1>                         
+                        </div>
+                    </div>
+                </div>
+                <div id="username">
+                    <div style="display:flex;justify-content:flex-end;">
+                        <img src="bell-ring.png" alt="" id="notif-button" style="cursor:pointer;">
+                        <div style="display:flex;margin-right: 20px;margin-top: 5px;border-radius: 5px;height: 60px;">
+                            <div style="width:40px;height:40px;border-radius:100px;background-color:#EF4444;margin-top: 13px;margin-right: 30px;">
+                                <img src="alien.png" alt="" style="width:40px; height:40px;">
+                            </div>
+                            <h2 style="margin-right:5px;">Morgan Oakley</h2>
+                        </div>
+                    </div>
+                    <div style="display:flex;justify-content:space-around;margin-top: 30px;">
+                        <div class="upload">New</div>
+                        <div class="upload">Upload</div>
+                        <div class="upload">Share</div>
+                    </div>
+                </div>
             </div>
+
             <div id="content">
-                <div id="project-cards">
-                    <div class="cards"></div>
-                    <div class="cards"></div>
-                    <div class="cards"></div>
-                    <div class="cards"></div>
-                    <div class="cards"></div>
-                    <div class="cards"></div>
+                <div id="project-flex">
+                    <h1 class="title">Your Projects</h1>
+                    <div id="project-cards">
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <h2 class="project-name">Project Name</h2>
+                            <div class="project-description">
+                                <p id="description-text">A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                    A bunch of text,A bunch of text,A bunch of text,A bunch of text
+                                </p>
+                                <div class="share">
+                                    <img src="star-plus-outline.png" alt="">
+                                    <img src="eye-plus-outline.png" alt="">
+                                    <img src="bomb.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="project-other-cards">
-                    <div class="bigger-cards"></div>
-                    <div class="bigger-cards"></div>
+                    <h1 class="title">Announcements</h1>
+                    <div class="bigger-cards">
+                        <div class="announce"><strong>Announcement</strong>:some text</div>
+                        <div class="announce"><strong>Announcement</strong>:some text</div>
+                        <div class="announce"><strong>Announcement</strong>:some text</div>
+                    </div>
+                    <h1 class="title">Trending</h1>
+                    <div class="bigger-cards2">
+                        
+                    </div>
                 </div>
             </div>
         </div>
